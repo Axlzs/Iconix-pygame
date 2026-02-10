@@ -17,7 +17,7 @@ def load_game_over_assets():
     Load images and sounds for the game over game_manager.screen.
     """
 
-    global background1,background2,background3,background4, backquit_sound, start_sound
+    global background1,background2,background3,background4# backquit_sound, start_sound
     background1 = pygame.image.load("images/UI_elements/Backgrounds/Game_over/1.png").convert()
     background2 = pygame.image.load("images/UI_elements/Backgrounds/Game_over/2.png").convert_alpha()
     background3 = pygame.image.load("images/UI_elements/Backgrounds/Game_over/3.png").convert_alpha()
@@ -29,11 +29,11 @@ def load_game_over_assets():
     background3 = pygame.transform.scale(background3, (WIDTH+80, HEIGHT+80))
     background4 = pygame.transform.scale(background4, (WIDTH+80, HEIGHT+80))
 
-    backquit_sound = pygame.mixer.Sound('sounds/backquit.ogg')
-    start_sound = pygame.mixer.Sound('sounds/start.ogg')
+    # backquit_sound = pygame.mixer.Sound('sounds/backquit.ogg')
+    # start_sound = pygame.mixer.Sound('sounds/start.ogg')
 
-    start_sound.set_volume(0.1)
-    backquit_sound.set_volume(0.1)
+    # start_sound.set_volume(0.1)
+    # backquit_sound.set_volume(0.1)
 
 
 def initialize_game():

@@ -370,8 +370,9 @@ def main_menu():
 
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     game_manager.get_display_res()
     game_manager.apply_settings()
+    print("Display initialized")
     main_menu()
             
